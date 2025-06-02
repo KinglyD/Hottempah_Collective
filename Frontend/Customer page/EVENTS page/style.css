@@ -1,6 +1,64 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #0d0d0d;
+  color: #fff;
+}
+
+.site-header {
+  background: url('assets/DSC02969.jpg') no-repeat center center/cover;
+  padding: 5em 1em 3em;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+.site-header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 0;
+}
+
+.header-content {
+  position: relative;
+  z-index: 1;
+}
+
+.brand-title {
+  margin: 0;
+  font-size: 2.5em;
+  color: #fff;
+}
+
+.nav-bar {
+  margin-top: 1em;
+}
+
+.nav-bar a {
+  color: white;
+  margin: 0 1em;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-bar a:hover {
+  text-decoration: underline;
+  color: #e91e63;
+}
+
+/* Events Page */
+
 .events-page {
   padding: 3em 2em;
   text-align: center;
+}
+
+.events-page h2 {
+  font-size: 2em;
+  margin-bottom: 1em;
+  color: #e91e63;
 }
 
 .event-list {
@@ -31,7 +89,7 @@
   color: #e91e63;
 }
 
-.event-card button {
+.buy-button {
   margin-top: 1em;
   padding: 0.6em 1.2em;
   background: #e91e63;
@@ -39,8 +97,16 @@
   border-radius: 8px;
   color: white;
   cursor: pointer;
+  font-weight: bold;
 }
 
-.event-card button:hover {
+.buy-button:hover {
   background: #ff4081;
+}
+
+footer {
+  background: #1a1a1a;
+  text-align: center;
+  padding: 1em;
+  margin-top: 4em;
 }
