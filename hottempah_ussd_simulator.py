@@ -68,8 +68,7 @@ def start_ticket_flow():
     
     validate_now = input("\nDo you want to validate a ticket now? (yes/no): ").strip().lower()
     if validate_now == 'yes':
-        ticket_to_validate = input("Enter the ticket2
-         ID to validate: ").strip()
+        ticket_to_validate = input("Enter the ticket ID to validate: ").strip()
         validate_ticket(ticket_to_validate)
 
 if __name__ == "__main__":
