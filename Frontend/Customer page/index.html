@@ -2,33 +2,51 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Sneaky Link</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sneaky Link | Home</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="Style.css" />
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
 </head>
-<body>
-  <header>
-    <div class="logo">SNEAKY LINK</div>
-    <nav class="nav-bar">
-      <a href="index.html">Home</a>
+<body class="page-home">
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">SNEAKY<span>LINK</span></div>
+    <nav>
+      <a href="index.html" class="active">Home</a>
       <a href="events.html">Events</a>
       <a href="creators.html">Creators</a>
       <a href="shops.html">Shops</a>
-      <a href="login.html" class="btn login-btn">Login</a>
+      <a href="login.html" class="btn">Login</a>
     </nav>
   </header>
 
-  <main>
-    <!-- Welcome Section Only -->
-    <section class="hero">
-      <h1>Welcome to Sneaky Link</h1>
-      <p>Unlock Africa's underground creativity. Join the movement.</p>
-      <button class="btn">Start Exploring</button>
-    </section>
-  </main>
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Discover the <span>Underground</span></h1>
+      <p>Find the hottest secret gigs, art pop‑ups & creative culture across Africa.</p>
+      <a href="events.html" class="btn primary">Explore Events</a>
+    </div>
+  </section>
 
+  <!-- Highlights -->
+  <section class="highlights">
+    <h2 class="section-title">🔥 Upcoming Events</h2>
+    <div class="card-grid events" id="home-event-list"><!-- filled by JS --></div>
+  </section>
+
+  <!-- Footer -->
   <footer>
-    <p>© 2025 Sneaky Link • Built for the culture</p>
+    <p>&copy; 2025 Sneaky Link. Built for the culture.</p>
   </footer>
+
+  <!-- Page‑specific JS -->
+  <script src="js/main.js"></script>
+
 </body>
 </html>

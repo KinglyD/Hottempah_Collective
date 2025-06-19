@@ -2,44 +2,32 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Creators</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Creators | Sneaky Link</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
 </head>
-<body>
-  <header>
-    <div class="logo">SNEAKY LINK</div>
-    <nav class="nav-bar">
+<body class="page-creators">
+  <header class="navbar">
+    <div class="logo">SNEAKY<span>LINK</span></div>
+    <nav>
       <a href="index.html">Home</a>
       <a href="events.html">Events</a>
-      <a href="creator.html">Creators</a>
+      <a href="creators.html" class="active">Creators</a>
       <a href="shops.html">Shops</a>
-      <a href="login.html" class="btn login-btn">Login</a>
+      <a href="login.html" class="btn">Login</a>
     </nav>
   </header>
 
-  <main>
-    <section class="artists">
-      <h2>🌍 Creator Profiles</h2>
-      <div class="card-container">
-        <div class="card">
-          <img src="artist1.jpg" alt="DJ Kazi">
-          <h3>DJ Kazi</h3>
-          <p>Afro-House / Trap Fusion</p>
-          <button class="btn">View Profile</button>
-        </div>
-        <div class="card">
-          <img src="artist2.jpg" alt="MIAH">
-          <h3>MIAH</h3>
-          <p>Neo-Soul + Live Band</p>
-          <button class="btn">View Profile</button>
-        </div>
-      </div>
-    </section>
-  </main>
+  <section class="page-hero">
+    <h1 class="title">Meet the Creators</h1>
+    <p class="subtitle">The minds shaping tomorrow’s sound.</p>
+  </section>
 
-  <footer>
-    <p>© 2025 Sneaky Link • Built for the culture</p>
-  </footer>
+  <section class="card-grid creators" id="creator-list"><!-- filled by JS --></section>
+
+  <footer><p>&copy; 2025 Sneaky Link</p></footer>
+ <script src="js/main.js"></script>
+
 </body>
 </html>

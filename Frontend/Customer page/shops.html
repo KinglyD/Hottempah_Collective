@@ -2,44 +2,32 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Creator Shops</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shops | Sneaky Link</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
 </head>
-<body>
-  <header>
-    <div class="logo">SNEAKY LINK</div>
-    <nav class="nav-bar">
+<body class="page-shops">
+  <header class="navbar">
+    <div class="logo">SNEAKY<span>LINK</span></div>
+    <nav>
       <a href="index.html">Home</a>
       <a href="events.html">Events</a>
-      <a href="creator.html">Creators</a>
-      <a href="shops.html">Shops</a>
-      <a href="login.html" class="btn login-btn">Login</a>
+      <a href="creators.html">Creators</a>
+      <a href="shops.html" class="active">Shops</a>
+      <a href="login.html" class="btn">Login</a>
     </nav>
   </header>
 
-  <main>
-    <section class="shops">
-      <h2>🛍️ Creator Shops</h2>
-      <div class="card-container">
-        <div class="card">
-          <img src="merch1.jpg" alt="Shop 1">
-          <h3>Thrift God Tees</h3>
-          <p>By DJ Kazi - 3 Days Left</p>
-          <button class="btn">Visit Shop</button>
-        </div>
-        <div class="card">
-          <img src="beats.jpg" alt="Shop 2">
-          <h3>Kingly Beats</h3>
-          <p>Exclusive Afrobeat Packs</p>
-          <button class="btn">Visit Shop</button>
-        </div>
-      </div>
-    </section>
-  </main>
+  <section class="page-hero">
+    <h1 class="title">Creator Shops</h1>
+    <p class="subtitle">Cop exclusive merch & art drops.</p>
+  </section>
 
-  <footer>
-    <p>© 2025 Sneaky Link • Built for the culture</p>
-  </footer>
+  <section class="card-grid shops" id="shop-list"><!-- filled by JS --></section>
+
+  <footer><p>&copy; 2025 Sneaky Link</p></footer>
+  <script src="js/main.js"></script>
+
 </body>
 </html>

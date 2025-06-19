@@ -2,45 +2,32 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Sneaky Events</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Events | Sneaky Link</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
 </head>
-<body>
-  <header>
-    <div class="logo">SNEAKY LINK</div>
-    <nav class="nav-bar">
+<body class="page-events">
+  <header class="navbar">
+    <div class="logo">SNEAKY<span>LINK</span></div>
+    <nav>
       <a href="index.html">Home</a>
-      <a href="events.html">Events</a>
-      <a href="creator.html">Creators</a>
+      <a href="events.html" class="active">Events</a>
+      <a href="creators.html">Creators</a>
       <a href="shops.html">Shops</a>
-      <a href="login.html" class="btn login-btn">Login</a>
+      <a href="login.html" class="btn">Login</a>
     </nav>
   </header>
 
-  <main>
-    <section class="events">
-      <h2>🔥 All Live & Upcoming Events</h2>
-      <div class="card-container">
-        <!-- Event cards go here -->
-        <div class="card">
-          <img src="event1.jpg" alt="Event 1">
-          <h3>Secret Warehouse Party</h3>
-          <p>Kigali - Friday Night</p>
-          <button class="btn">Buy Ticket</button>
-        </div>
-        <div class="card">
-          <img src="event2.jpg" alt="Event 2">
-          <h3>Live Art & Beats</h3>
-          <p>Nairobi - This Weekend</p>
-          <button class="btn">Buy Ticket</button>
-        </div>
-      </div>
-    </section>
-  </main>
+  <section class="page-hero">
+    <h1 class="title">Upcoming & Underground Events</h1>
+    <p class="subtitle">Hand‑picked shows across the continent.</p>
+  </section>
 
-  <footer>
-    <p>© 2025 Sneaky Link • Built for the culture</p>
-  </footer>
+  <section class="card-grid events" id="event-list"><!-- filled by JS --></section>
+
+  <footer><p>&copy; 2025 Sneaky Link</p></footer>
+  <script src="js/main.js"></script>
+
 </body>
 </html>
